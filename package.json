@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install",
     "start": "node src/screenshot.js"
   },
   "repository": {
@@ -22,6 +23,9 @@
   },
   "homepage": "https://github.com/Yanghting/puppteer-example#readme",
   "dependencies": {
+    "@commitlint/cli": "^16.0.1",
+    "@commitlint/config-conventional": "^16.0.0",
+    "husky": "^7.0.4",
     "puppeteer": "^13.0.1"
   }
 }

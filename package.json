@@ -1,0 +1,27 @@
+{
+  "name": "puppeteer",
+  "version": "1.0.0",
+  "description": "An use puppeteer example",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/screenshot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yanghting/puppteer-example.git"
+  },
+  "keywords": [
+    "puppeteer"
+  ],
+  "author": "Luzka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yanghting/puppteer-example/issues"
+  },
+  "homepage": "https://github.com/Yanghting/puppteer-example#readme",
+  "dependencies": {
+    "puppeteer": "^13.0.1"
+  }
+}

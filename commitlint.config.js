@@ -3,8 +3,8 @@ module.exports = {
   parserPreset: {
     parserOpts: {
       headerPattern: /^(\w*): (.*)$/,
-      headerCorrespondence: ['type', 'subject'],
-    },
+      headerCorrespondence: ['type', 'subject']
+    }
   },
   rules: {
     'type-enum': [2, 'always', [
@@ -16,6 +16,6 @@ module.exports = {
       'test',     //测试
       'refactor', //重构
       'chore'     //构建或辅助工具变动
-    ]],
-  },
+    ]]
+  }
 }

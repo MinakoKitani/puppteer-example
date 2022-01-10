@@ -6,3 +6,6 @@ yarn.lock
 
 # husky
 .husky
+
+# 草稿箱
+src/newScreenshot.js

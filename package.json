@@ -8,7 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install",
     "screenshot": "node src/screenshot.js",
-    "pdf": "node src/pdf.js"
+    "pdf": "node src/pdf.js",
+    "type-form": "node src/typeForm.js"
   },
   "repository": {
     "type": "git",

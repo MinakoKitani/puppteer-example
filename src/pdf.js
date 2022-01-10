@@ -1,6 +1,6 @@
 import puppeteer from 'puppeteer'
 
-import { screentscroll } from './util.js'
+import { screenscroll } from './util.js'
 
 // 生成pdf
 async function pdf () {
@@ -15,7 +15,7 @@ async function pdf () {
   })
   await page.goto('https://www.wps.com/')
   await page.click('#__layout > div > div.gdpr-wrapper > button')
-  await screentscroll(page)
+  await screenscroll(page)
   // 改变页面的css媒体类型为scrren,如果不设置则是默认类型为print
   await page.emulateMediaType('screen')
   try {

@@ -1,6 +1,6 @@
 import puppeteer from 'puppeteer'
 
-import { screentscroll } from './util.js'
+import { screenscroll } from './util.js'
 
 // 当截全屏的时候,因为还没有滚动到下面,所以首屏下面的图片不会加载出来,无论你等待多久都没用,所以需要实现滚动操作
 async function screenshort () {
@@ -20,12 +20,13 @@ async function screenshort () {
   })
   // 去到特定页面
   await page.goto('https://www.wps.com/', {
-    waitUntil: 'networkidle0'
+    waitUntil: 'networkidle0',
+    timeout: 0                                // 默认的30s已经不能满足了!!
   })
   // 点击同意获取cokkie
   await page.click('#__layout > div > div.gdpr-wrapper > button')
   // 滚动
-  await screentscroll(page)
+  await screenscroll(page)
   try {
     // 截图
     await page.screenshot({
@@ -35,8 +36,8 @@ async function screenshort () {
     }).catch(err => {
       console.log('截图失败', err)
     })
-  } catch (e) {
-    console.log('执行异常', e)
+  } catch (err) {
+    console.log('执行异常', err)
   } finally {
     // 关闭当前页面,不关闭的话,下次调起这个页面还存在
     await page.close()

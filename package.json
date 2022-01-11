@@ -9,7 +9,8 @@
     "prepare": "husky install",
     "screenshot": "node src/screenshot.js",
     "pdf": "node src/pdf.js",
-    "type-form": "node src/typeForm.js"
+    "type-form": "node src/typeForm.js",
+    "upload-file": "node src/uploadFile.js"
   },
   "repository": {
     "type": "git",
